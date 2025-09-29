@@ -1,0 +1,362 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Trading Performance Report</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 20px; background-color: #f5f5f5; }
+                .header { background-color: #2c3e50; color: white; padding: 20px; border-radius: 10px; margin-bottom: 20px; }
+                .summary { background-color: white; padding: 20px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+                .trade-report { background-color: white; padding: 20px; border-radius: 10px; margin-bottom: 30px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+                .trade-header { background-color: #3498db; color: white; padding: 15px; border-radius: 5px; margin-bottom: 15px; }
+                .metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 15px 0; }
+                .metric-box { background-color: #ecf0f1; padding: 15px; border-radius: 5px; text-align: center; }
+                .metric-value { font-size: 24px; font-weight: bold; color: #2c3e50; }
+                .metric-label { color: #7f8c8d; font-size: 14px; }
+                .profitable { color: #27ae60; }
+                .unprofitable { color: #e74c3c; }
+                .trade-details { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; }
+                .detail-section { background-color: #f8f9fa; padding: 15px; border-radius: 5px; }
+                .chart-container { text-align: center; margin: 20px 0; }
+                .analysis-section { background-color: #fff3cd; padding: 15px; border-radius: 5px; margin: 15px 0; }
+                table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+                th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+                th { background-color: #34495e; color: white; }
+                .reason-box { background-color: #e8f4f8; padding: 10px; border-left: 4px solid #3498db; margin: 10px 0; }
+            </style>
+        </head>
+        <body>
+            <div class="header">
+                <h1>Multi-Strategy Trading Performance Report</h1>
+                <p>Generated on: 2025-09-25 01:20:37</p>
+            </div>
+        
+            <div class="summary">
+                <h2>Overall Performance Summary</h2>
+                <div class="metrics-grid">
+                    <div class="metric-box">
+                        <div class="metric-value">4</div>
+                        <div class="metric-label">Total Trades</div>
+                    </div>
+                    <div class="metric-box">
+                        <div class="metric-value unprofitable">$-2.87</div>
+                        <div class="metric-label">Total P&L</div>
+                    </div>
+                    <div class="metric-box">
+                        <div class="metric-value">25.0%</div>
+                        <div class="metric-label">Win Rate</div>
+                    </div>
+                    <div class="metric-box">
+                        <div class="metric-value">$-0.72</div>
+                        <div class="metric-label">Avg P&L/Trade</div>
+                    </div>
+                    <div class="metric-box">
+                        <div class="metric-value">2.0h</div>
+                        <div class="metric-label">Avg Duration</div>
+                    </div>
+                </div>
+                
+                <h3>Strategy Performance Breakdown</h3>
+                <table>
+                    <tr>
+                        <th>Strategy</th>
+                        <th>Trades</th>
+                        <th>Total P&L</th>
+                        <th>Win Rate</th>
+                        <th>Avg P&L/Trade</th>
+                    </tr>
+            
+                    <tr>
+                        <td><strong>Unknown</strong></td>
+                        <td>4</td>
+                        <td class="unprofitable">$-2.87</td>
+                        <td>25.0%</td>
+                        <td class="unprofitable">$-0.72</td>
+                    </tr>
+                
+                </table>
+            </div>
+            <h2>Individual Trade Analysis</h2>
+            <div class="trade-report">
+                <div class="trade-header">
+                    <h3>Trade #1: Unknown Strategy</h3>
+                </div>
+                
+                <div class="metrics-grid">
+                    <div class="metric-box">
+                        <div class="metric-value unprofitable">$-0.21</div>
+                        <div class="metric-label">Profit/Loss</div>
+                    </div>
+                    <div class="metric-box">
+                        <div class="metric-value unprofitable">-0.21%</div>
+                        <div class="metric-label">Return %</div>
+                    </div>
+                    <div class="metric-box">
+                        <div class="metric-value">0 days 00:15:00</div>
+                        <div class="metric-label">Duration</div>
+                    </div>
+                </div>
+                
+                <div class="trade-details">
+                    <div class="detail-section">
+                        <h4>BUY Details</h4>
+                        <p><strong>Price:</strong> $2.88</p>
+                        <p><strong>Time:</strong> 2025-09-24 13:40:00</p>
+                        <p><strong>Amount:</strong> $100.00</p>
+                        <p><strong>Shares:</strong> 34.678874</p>
+                        <div class="reason-box">
+                            <strong>Buy Reason:</strong><br>
+                            Improved Trend BUY: MA cross + Vol 1.3x + Strong trend
+                        </div>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h4>SELL Details</h4>
+                        <p><strong>Price:</strong> $2.88</p>
+                        <p><strong>Time:</strong> 2025-09-24 13:55:00</p>
+                        <div class="reason-box">
+                            <strong>Sell Reason:</strong><br>
+                            Improved Trend SELL: MA cross or below fast EMA (P&L: $-0.21, -0.21%)
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chart-container">
+                    <h4>Trade Chart Analysis</h4>
+                    <img src="charts/trade_1_Unknown_chart.png" alt="Trade Chart" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 5px;">
+                </div>
+            
+                <div class="analysis-section">
+                    <h4>Trade Analysis</h4>
+                    <div class="trade-details">
+                        <div class="detail-section">
+                            <h5>Price Action Analysis</h5>
+                            <p><strong>Max Favorable:</strong> +0.17%</p>
+                            <p><strong>Max Adverse:</strong> -0.23%</p>
+                            <p><strong>Entry Quality:</strong> Average - Mixed signals</p>
+                            <p><strong>Exit Quality:</strong> Poor - Lower range exit</p>
+                        </div>
+                        
+                        <div class="detail-section">
+                            <h5>Market Conditions</h5>
+                            <p><strong>Volatility:</strong> 0.17% (Low Volatility)</p>
+                            <p><strong>Duration Type:</strong> Scalp Trade (< 1 hour)</p>
+                            <p><strong>Position Size:</strong> Medium Position</p>
+                            <p><strong>Volume Change:</strong> +142.8%</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            <div class="trade-report">
+                <div class="trade-header">
+                    <h3>Trade #2: Unknown Strategy</h3>
+                </div>
+                
+                <div class="metrics-grid">
+                    <div class="metric-box">
+                        <div class="metric-value profitable">$+0.65</div>
+                        <div class="metric-label">Profit/Loss</div>
+                    </div>
+                    <div class="metric-box">
+                        <div class="metric-value profitable">+0.65%</div>
+                        <div class="metric-label">Return %</div>
+                    </div>
+                    <div class="metric-box">
+                        <div class="metric-value">0 days 02:20:00</div>
+                        <div class="metric-label">Duration</div>
+                    </div>
+                </div>
+                
+                <div class="trade-details">
+                    <div class="detail-section">
+                        <h4>BUY Details</h4>
+                        <p><strong>Price:</strong> $2.92</p>
+                        <p><strong>Time:</strong> 2025-09-24 14:45:00</p>
+                        <p><strong>Amount:</strong> $99.79</p>
+                        <p><strong>Shares:</strong> 34.153076</p>
+                        <div class="reason-box">
+                            <strong>Buy Reason:</strong><br>
+                            Momentum BUY: BB breakout + RSI 93.1 + Vol 2.2x
+                        </div>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h4>SELL Details</h4>
+                        <p><strong>Price:</strong> $2.94</p>
+                        <p><strong>Time:</strong> 2025-09-24 17:05:00</p>
+                        <div class="reason-box">
+                            <strong>Sell Reason:</strong><br>
+                            Momentum SELL: Below BB middle (P&L: $+0.65, +0.65%)
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chart-container">
+                    <h4>Trade Chart Analysis</h4>
+                    <img src="charts/trade_2_Unknown_chart.png" alt="Trade Chart" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 5px;">
+                </div>
+            
+                <div class="analysis-section">
+                    <h4>Trade Analysis</h4>
+                    <div class="trade-details">
+                        <div class="detail-section">
+                            <h5>Price Action Analysis</h5>
+                            <p><strong>Max Favorable:</strong> +1.09%</p>
+                            <p><strong>Max Adverse:</strong> -0.54%</p>
+                            <p><strong>Entry Quality:</strong> Average - Mixed signals</p>
+                            <p><strong>Exit Quality:</strong> Good - Upper range exit</p>
+                        </div>
+                        
+                        <div class="detail-section">
+                            <h5>Market Conditions</h5>
+                            <p><strong>Volatility:</strong> 0.17% (Low Volatility)</p>
+                            <p><strong>Duration Type:</strong> Intraday Trade</p>
+                            <p><strong>Position Size:</strong> Small Position</p>
+                            <p><strong>Volume Change:</strong> +160.2%</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            <div class="trade-report">
+                <div class="trade-header">
+                    <h3>Trade #3: Unknown Strategy</h3>
+                </div>
+                
+                <div class="metrics-grid">
+                    <div class="metric-box">
+                        <div class="metric-value unprofitable">$-0.18</div>
+                        <div class="metric-label">Profit/Loss</div>
+                    </div>
+                    <div class="metric-box">
+                        <div class="metric-value unprofitable">-0.18%</div>
+                        <div class="metric-label">Return %</div>
+                    </div>
+                    <div class="metric-box">
+                        <div class="metric-value">0 days 00:40:00</div>
+                        <div class="metric-label">Duration</div>
+                    </div>
+                </div>
+                
+                <div class="trade-details">
+                    <div class="detail-section">
+                        <h4>BUY Details</h4>
+                        <p><strong>Price:</strong> $2.97</p>
+                        <p><strong>Time:</strong> 2025-09-24 19:45:00</p>
+                        <p><strong>Amount:</strong> $100.43</p>
+                        <p><strong>Shares:</strong> 33.804763</p>
+                        <div class="reason-box">
+                            <strong>Buy Reason:</strong><br>
+                            Momentum BUY: BB breakout + RSI 89.2 + Vol 2.4x
+                        </div>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h4>SELL Details</h4>
+                        <p><strong>Price:</strong> $2.97</p>
+                        <p><strong>Time:</strong> 2025-09-24 20:25:00</p>
+                        <div class="reason-box">
+                            <strong>Sell Reason:</strong><br>
+                            Momentum SELL: Weak momentum (RSI 19.6) (P&L: $-0.18, -0.18%)
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chart-container">
+                    <h4>Trade Chart Analysis</h4>
+                    <img src="charts/trade_3_Unknown_chart.png" alt="Trade Chart" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 5px;">
+                </div>
+            
+                <div class="analysis-section">
+                    <h4>Trade Analysis</h4>
+                    <div class="trade-details">
+                        <div class="detail-section">
+                            <h5>Price Action Analysis</h5>
+                            <p><strong>Max Favorable:</strong> +0.87%</p>
+                            <p><strong>Max Adverse:</strong> -0.42%</p>
+                            <p><strong>Entry Quality:</strong> Average - Mixed signals</p>
+                            <p><strong>Exit Quality:</strong> Poor - Lower range exit</p>
+                        </div>
+                        
+                        <div class="detail-section">
+                            <h5>Market Conditions</h5>
+                            <p><strong>Volatility:</strong> 0.17% (Low Volatility)</p>
+                            <p><strong>Duration Type:</strong> Scalp Trade (< 1 hour)</p>
+                            <p><strong>Position Size:</strong> Medium Position</p>
+                            <p><strong>Volume Change:</strong> +164.3%</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            <div class="trade-report">
+                <div class="trade-header">
+                    <h3>Trade #4: Unknown Strategy</h3>
+                </div>
+                
+                <div class="metrics-grid">
+                    <div class="metric-box">
+                        <div class="metric-value unprofitable">$-3.13</div>
+                        <div class="metric-label">Profit/Loss</div>
+                    </div>
+                    <div class="metric-box">
+                        <div class="metric-value unprofitable">-3.12%</div>
+                        <div class="metric-label">Return %</div>
+                    </div>
+                    <div class="metric-box">
+                        <div class="metric-value">0 days 04:55:00</div>
+                        <div class="metric-label">Duration</div>
+                    </div>
+                </div>
+                
+                <div class="trade-details">
+                    <div class="detail-section">
+                        <h4>BUY Details</h4>
+                        <p><strong>Price:</strong> $2.93</p>
+                        <p><strong>Time:</strong> 2025-09-24 23:20:00</p>
+                        <p><strong>Amount:</strong> $100.26</p>
+                        <p><strong>Shares:</strong> 34.192131</p>
+                        <div class="reason-box">
+                            <strong>Buy Reason:</strong><br>
+                            Improved Mean Reversion BUY: RSI 24.4 + BB + Stoch 6.2
+                        </div>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h4>SELL Details</h4>
+                        <p><strong>Price:</strong> $2.84</p>
+                        <p><strong>Time:</strong> 2025-09-25 04:15:00</p>
+                        <div class="reason-box">
+                            <strong>Sell Reason:</strong><br>
+                            Stop Loss (-3.12%) (P&L: $-3.13, -3.12%)
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chart-container">
+                    <h4>Trade Chart Analysis</h4>
+                    <img src="charts/trade_4_Unknown_chart.png" alt="Trade Chart" style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 5px;">
+                </div>
+            
+                <div class="analysis-section">
+                    <h4>Trade Analysis</h4>
+                    <div class="trade-details">
+                        <div class="detail-section">
+                            <h5>Price Action Analysis</h5>
+                            <p><strong>Max Favorable:</strong> +0.44%</p>
+                            <p><strong>Max Adverse:</strong> -3.24%</p>
+                            <p><strong>Entry Quality:</strong> Average - Mixed signals</p>
+                            <p><strong>Exit Quality:</strong> Poor - Lower range exit</p>
+                        </div>
+                        
+                        <div class="detail-section">
+                            <h5>Market Conditions</h5>
+                            <p><strong>Volatility:</strong> 0.17% (Low Volatility)</p>
+                            <p><strong>Duration Type:</strong> Intraday Trade</p>
+                            <p><strong>Position Size:</strong> Medium Position</p>
+                            <p><strong>Volume Change:</strong> +26.2%</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </body>
+            </html>
+        
